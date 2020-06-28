@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  alert('holamundo')
+  // alert('holamundo')
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
