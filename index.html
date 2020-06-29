@@ -8,19 +8,19 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
     <script src="./js/bulma.js"></script>
-
-
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- color hex from logo: 002c65 -->
     <!-- GLIDEJS Required Core Stylesheet -->
     <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://mercuryproducts.net">
           <img src="./images/Mercury-Products.png" >
         </a>
-
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -54,70 +54,66 @@
                 Our Products
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item">
+              <a class="navbar-item" href="#contact">
                 Contact
               </a>
             </div>
           </div>
         </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </nav>    <script>
-      new Glide('.glide').mount()
-    </script>
+    </nav>
     <section id="home" class="section">
       <div class="container">
-        <h1 class="title">
-          Mercury Products
-        </h1>
-        <p class="subtitle">
-          Mercury Products maybe would be using <strong>Bulma</strong>!
-        </p>
         <!-- GLIDE SLIDER -->
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide">
-                <img src="./images/Focused-woman-applying-cream-on-face-in-bathroom-by-Retha-Ferguson.jpg" alt="">
+                <img src="./images/Focused-woman-applying-cream-on-face-in-bathroom-by-Retha-Ferguson.jpg" alt="Photo by Retha Ferguson from Pexels">
               </li>
               <li class="glide__slide">
-                <img src="./images/Focused-woman-applying-cream-on-face-in-bathroom-by-Retha-Ferguson.jpg" alt="">
+                <img src="./images/soaps-on-marble-surface-with-line-chip.jpg" alt="Photo by Karolina Grabowska from Pexels">
               </li>
               <li class="glide__slide">
-                <img src="./images/Focused-woman-applying-cream-on-face-in-bathroom-by-Retha-Ferguson.jpg" alt="">
+                <img src="./images/mercury-doors-slider.jpg" alt="Mercury Products Doors">
               </li>
             </ul>
           </div>
-          <div data-glide-el="controls">
-            <button data-glide-dir="<<">Start</button>
-            <button data-glide-dir=">>">End</button>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
           </div>
         </div>
+        <!-- GLIDE SLIDER END -->
       </div>
     </section>
-    <section id="about" class="section">
-      <div class="container">
-        <h1 class="title">
-          About Us
-        </h1>
-        <p class="subtitle">
-          <strong>Mercury Products</strong> was established in 2005 and is currently a leading manufacturer of
-          home and personal care products. Mercury have been in the market for 15 years and
-          produce a range of products that include candle, cosmetics and most recently
-          diversified into the furniture industry making doors.
-        </p>
+    <section id="about" class="hero is-info is-large">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            About Us
+          </h1>
+          <p class="subtitle">
+            <strong>Mercury Products</strong> was established in 2005 and is currently a leading manufacturer of
+            home and personal care products. Mercury have been in the market for 15 years and
+            produce a range of products that include candle, cosmetics and most recently
+            diversified into the furniture industry making doors.</p>
+            <p class="subtitle">From the outset <strong>Mercury Products</strong> was focused on the unique needs and
+              opportunities in Malawi.</p>
+          <div class="content">
+            <p class="subtitle">Today <strong>Mercury Products</strong> is a major manufacturing and marketing enterprise with
+              specialised expertise:</p>
+              <ul>
+                <li>120 employees across 3 divisions.</li>
+                <li>Manufacturing facilities for Beauty Care products, Candles and doors.</li>
+                <li>20 products including leading brands in Malawi – LISA, Try Me and Mercury.</li>
+                <li>2Sold throughout Malawi in the Southern, Central, Northern regions and
+                  Neighbouring Countries.</li>
+                </ul>
+              </div>
+            </div>
       </div>
     </section>
     <section id="vision" class="section">
@@ -151,8 +147,56 @@
         </p>
       </div>
     </section>
+    <section id='contact' class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Contact Us
+          </h1>
+          <h2 class="subtitle">
+            <span class="icon">
+              <i class="far fa-paper-plane"></i>
+            </span>
+            <a href="mailto:contact@mercuryproducts.net">contact@mercuryproducts.net</a>
+          </h2>
+          <h2 class="subtitle">
+            <span class="icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <a href="tel:+265-0994-656-786">0994 656 786</a>
+          </h2>
+          <h2 class="subtitle">
+            <span class="icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <a href="tel:+265-0994-700-782">0994 700 782</a>
+          </h2>
+          <h2 class="subtitle">
+            <span class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <a href="https://goo.gl/maps/qz4JhpM8av8QuSHJ8">AGASON TRADING CENTRE,LIMBE MALAWI</a>
+          </h2>
+
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <img src="./images/mercury-products.png" alt="Mercury Products Logo">
+        </p>
+        <p>
+          <a href="https://mercuryproducts.net"><strong>Mercury Products</strong></a> © 2020 Developed by <a href="https://josedromero.com" target="_blank">Jose Romero</a>.
+        </p>
+      </div>
+    </footer>
   </body>
   <script>
-    new Glide('.glide').mount()
+    new Glide('.glide', {
+      autoplay: 3000,
+      animationDuration: 1500,
+    }).mount()
   </script>
 </html>
