@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mercury Products</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- BULMA -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
@@ -14,6 +17,7 @@
     <!-- GLIDEJS Required Core Stylesheet -->
     <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <title>Mercury Products</title>
   </head>
   <body>
     <nav class="navbar is-warning is-fixed-top" role="navigation" aria-label="main navigation">
@@ -50,7 +54,7 @@
               <a class="navbar-item" href="#values">
                 Our Values
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="#products">
                 Our Products
               </a>
               <hr class="navbar-divider">
@@ -84,14 +88,6 @@
           <!-- GLIDE SLIDER END -->
         </div>
       </div>
-      <!-- testing -->
-      <div class="columns is-mobile is-centered">
-        <p class="bd-notification is-primary">
-          <code class="html">is-half</code><br>
-        </p>
-      </div>
-      <!-- end testing -->
-
     </section>
     <!-- About section -->
     <section id="about" class="hero is-dark is-large">
@@ -158,7 +154,32 @@
         </div>
       </div>
     </section>
-    <section id='contact' class="hero is-dark">
+    <!-- Products section -->
+    <section id='products' class="hero is-light is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Our Products
+          </h1>
+          <p class="subtitle">
+            Must satisfy the health, beauty and home care needs of consumers.
+          </p>
+          <p class="subtitle">
+            Must be innovative, offering consumers clear, unique and relevant benefits versus
+            competing products.
+          </p>
+          <p class="subtitle">
+            Must always offer exceptional value, irrespective of the price at which they are sold.
+          </p>
+          <p class="subtitle">
+            Must be continually re-engineered and improved to be in tune with the changing
+            needs and aspirations of consumers.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id='contact' class="hero is-dark is-medium">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -194,14 +215,13 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <img src="./images/mercury-products.png" alt="Mercury Products Logo">
+          <a href="https://mercuryproducts.net"><img src="./images/mercury-products.png" alt="Mercury Products Logo"></a>
         </p>
         <p>
           <a href="https://mercuryproducts.net"><strong>Mercury Products</strong></a> © 2020 Developed by <a href="https://josedromero.com" target="_blank">Jose Romero</a>.
         </p>
       </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
     <script src="./node_modules/@glidejs/glide/dist/glide.js"></script>
     <script>
     const CONFIG = {
