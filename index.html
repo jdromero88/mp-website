@@ -14,13 +14,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- GLIDEJS Required Core Stylesheet -->
-    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-
+    <!-- GLIDEJS Required Core Stylesheet Local-->
+    <!-- <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+    <!-- GLIDEJS Required Core Stylesheet CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
     <!-- BULMA -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css"> -->
     <script src="./js/bulma.js"></script>
 
     <!-- Font Awesome -->
@@ -29,7 +31,7 @@
 
     <!-- Open Graph data -->
     <!-- Make sure to update the og:image when deploying site -->
-    <meta property="og:image" content="https://mercuryproducts.net/draft/images/mercury-products.png">
+    <meta property="og:image" content="https://mercuryproducts.net/images/mercury-products.png">
     <meta property="og:title" content="Mercury Products leading manufacturer of home and personal care products.">
     <meta property="og:description" content="Mercury Products was established in 2005 and is currently a leading manufacturer of
     home and personal care products. Mercury have been in the market for 15 years and
@@ -52,7 +54,7 @@
     <meta name="twitter:creator" content="@mercuryproducts" />
     <meta
       name="twitter:image"
-      content="https://mercuryproducts.net/draft/images/mercury-products.png"
+      content="https://mercuryproducts.net/images/mercury-products.png"
     />
 
     <title>Mercury Products leading manufacturer of home and personal care products.</title>
@@ -143,7 +145,7 @@
                 <li>120 employees across 3 divisions.</li>
                 <li>Manufacturing facilities for Beauty Care products, Candles and doors.</li>
                 <li>20 products including leading brands in Malawi – LISA, Try Me and Mercury.</li>
-                <li>2Sold throughout Malawi in the Southern, Central, Northern regions and
+                <li>Sold throughout Malawi in the Southern, Central, Northern regions and
                   Neighbouring Countries.</li>
                 </ul>
               </div>
@@ -249,7 +251,9 @@
         </p>
       </div>
     </footer>
-    <script src="./node_modules/@glidejs/glide/dist/glide.js"></script>
+    <!-- <script src="./node_modules/@glidejs/glide/dist/glide.js"></script> -->
+    <!-- Glide CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
     const CONFIG = {
       type: 'carousel',
