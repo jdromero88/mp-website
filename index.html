@@ -1,300 +1,216 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <!-- new colors: green #8BC34A blue: #002C65 -->
-
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mercury Products was established in 2005 and is currently a leading manufacturer of
-    home and personal care products. Mercury have been in the market for 15 years and
-    produce a range of products that include candle, cosmetics and most recently
-    diversified into the furniture industry making doors.">
-    <meta name="keywords" content="candle, beauty products, door frames, cosmetics, furniture">
-    <meta name="author" content="José Romero">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://mercuryproducts.net" rel="canonical">
-    <link href="https://mercuryproducts.net" rel="home">
-
-    <!-- GLIDEJS Required Core Stylesheet Local-->
-    <!-- <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
-    <!-- <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
-    <!-- GLIDEJS Required Core Stylesheet CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
-    <!-- BULMA -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <!-- <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css"> -->
-    <script src="./js/bulma.js"></script>
-
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!-- color hex from logo: 002c65 -->
-
-    <!-- Open Graph data -->
-    <!-- Make sure to update the og:image when deploying site -->
-    <meta property="og:image" content="https://mercuryproducts.net/images/mercury-products.png">
-    <meta property="og:title" content="Mercury Products leading manufacturer of home and personal care products.">
-    <meta property="og:description" content="Mercury Products was established in 2005 and is currently a leading manufacturer of
-    home and personal care products. Mercury have been in the market for 15 years and
-    produce a range of products that include candle, cosmetics and most recently
-    diversified into the furniture industry making doors.">
-    <meta property="og:url" content="https://mercuryproducts.net" />
-    <meta property="og:site_name" content="Mercury Products" />
-
-    <!-- Twitter Data-->
-    <!-- Make sure to update twitter:creator when the real user -->
-    <meta name="twitter:title" content="Mercury Products">
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:description"
-      content="Mercury Products was established in 2005 and is currently a leading manufacturer of
-      home and personal care products. Mercury have been in the market for 15 years and
-      produce a range of products that include candle, cosmetics and most recently
-      diversified into the furniture industry making doors."
-    />
-    <meta name="twitter:creator" content="@mercuryproducts" />
-    <meta
-      name="twitter:image"
-      content="https://mercuryproducts.net/images/mercury-products.png"
-    />
-
-    <title>Mercury Products leading manufacturer of home and personal care products.</title>
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="has-navbar-fixed-top">
-    <nav class="navbar is-warning is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item force-center" href="https://mercuryproducts.net">
-          <img src="./images/mercury-products.png" alt="Mercury Products logo">
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <!-- <div class="navbar-start" style="flex-grow:1; justify-content:center"> -->
-        <div class="navbar-start force-center" >
-          <a class="navbar-item" href="#top">
-            Home
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Products
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#vision-values">
-                Cosmetics
-              </a>
-              <a class="navbar-item" href="#vision-values">
-                Candles
-              </a>
-              <a class="navbar-item" href="#products">
-                Doors & Furniture
-              </a>
-            </div>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#about">
-              About Us
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#vision-values">
-                Vision
-              </a>
-              <a class="navbar-item" href="#vision-values">
-                Our Values
-              </a>
-              <a class="navbar-item" href="#products">
-                Our Products
-              </a>
-            </div>
-          </div>
-          <a class="navbar-item" href="#contact">
-            Contact
-          </a>
-        </div>
-      </div>
-    </nav>
-
-
-    <!-- Home section -->
-    <section id="home" class="hero is-light is-bold is-fullheight">
-      <div class="hero-head">
-        <div class="container has-text-centered">
-          <img src="./images/mercury-products.png" alt="Mercury Products logo">
-        </div>
-      </div>
-      <div class="hero-body">
-        <!-- GLIDE SLIDER -->
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide"><img src="./images/Focused-woman-applying-cream-on-face-in-bathroom-by-Retha-Ferguson.jpg" alt="Photo by Retha Ferguson from Pexels"></li>
-              <li class="glide__slide"><img src="./images/soaps-on-marble-surface-with-line-chip.jpg" alt="Photo by Karolina Grabowska from Pexels"></li>
-              <li class="glide__slide"><img src="./images/candles.jpg" alt="Image by Lars_Nissen from Pixabay"></li>
-              <li class="glide__slide"><img src="./images/candle.jpg" alt="Image by Thomas Mühl from Pixabay"></li>
-            </ul>
-          </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-        <!-- GLIDE SLIDER END -->
-      </div>
-    </section>
-    <!-- About section -->
-    <section id="about" class="hero is-dark is-fullheight">
+  <body>
+    <section class="hero is-medium is-primary">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-            About Us
-          </h1>
-          <p class="subtitle">
-            <strong>Mercury Products</strong> was established in 2005 and is currently a leading manufacturer of
-            home and personal care products. Mercury have been in the market for 15 years and
-            produce a range of products that include candle, cosmetics and most recently
-            diversified into the furniture industry making doors.</p>
-            <p class="subtitle">From the outset <strong>Mercury Products</strong> was focused on the unique needs and
-              opportunities in Malawi.</p>
-          <div class="content">
-            <p class="subtitle">Today <strong>Mercury Products</strong> is a major manufacturing and marketing enterprise with
-              specialised expertise:</p>
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-2 is-spaced">
+                Hello Bulma!
+              </h1>
+              <h2 class="subtitle is-4">
+                  Congratulations! You're running the <strong>Bulma start</strong> project.
+                  <br>
+                  It includes everything you need to <strong>build your own website</strong> with Bulma.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <h3>What's included</h3>
+              <p>
+                The <code>npm</code> dependencies included in <code>package.json</code> are:
+              </p>
               <ul>
-                <li>120 employees across 3 divisions.</li>
-                <li>Manufacturing facilities for Beauty Care products, Candles and doors.</li>
-                <li>20 products including leading brands in Malawi – LISA, Try Me and Mercury.</li>
-                <li>Sold throughout Malawi in the Southern, Central, Northern regions and
-                  Neighbouring Countries.</li>
-                </ul>
-              </div>
+                <li>
+                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
+                </li>
+                <li>
+                  <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
+                </li>
+                <li>
+                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
+                </li>
+                <li>
+                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
+                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
+                  and
+                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
+                  for compiling ES6 JavaScript files
+                </li>
+              </ul>
+              <p>
+                Apart from <code>package.json</code>, the following files are included:
+              </p>
+              <ul>
+                <li>
+                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
+                </li>
+                <li>
+                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
+                </li>
+                <li>
+                  <code>index.html</code> this HTML5 file
+                </li>
+                <li>
+                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
+                </li>
+                <li>
+                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
+                </li>
+              </ul>
+              <h3>Try it out!</h3>
+              <p>
+                To see if your setup works, follow these steps:
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <strong>Move</strong> to this directory:
+                    <br>
+                    <pre><code>cd bulma-start</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Install</strong> all dependencies:
+                    <br>
+                    <pre><code>npm install</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Start</strong> the CSS and JS watchers:
+                    <br>
+                    <pre><code>npm start</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
+                    <br>
+                    <pre><span style="color: #22863a;">html</span> {
+  <span style="color: #005cc5;"><span style="color: #005cc5;">background-color</span></span>: <span style="color: #24292e">$green</span>;
+}</pre>
+                  </p>
+                </li>
+              </ol>
+              <p>
+                The page background should turn <strong class="has-text-success">green</strong>!
+              </p>
+              <h3>Get started</h3>
+              <p>
+                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
+                <br>
+                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
+              </p>
             </div>
-      </div>
-    </section>
-    <!-- Vision section -->
-    <section id='vision-values' class="hero is-light is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Vision
-          </h1>
-          <p class="subtitle">
-            To provide quality and affordable home and personal care products to the
-            <strong>community</strong> whilst becoming a market leader in the region.
-          </p>
-          <h1 class="title pt-6	">
-            Our Values
-          </h1>
-          <p class="subtitle">
-            We run our business in an ethical manner, dealing fairly and respectfully with our
-            consumers, customers, suppliers, employees, environment and the broader
-            community in which we operate.
-          </p>
-          <p class="subtitle">
-            We strive to always maintain a healthy balance between entrepreneurialism and
-            professionalism.
-          </p>
-          <p class="subtitle">
-            Decisions should be guided by what is in the company’s best interests over the long
-            term, rather than the pursuit of unsustainable short-term benefits.
-          </p>
+            <table class="table is-bordered is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>CSS class</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Columns</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
+                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Layout</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
+                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
+                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Elements</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Form</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
+                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Helpers</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
+                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="content">
+              <p>
+                If you want to <strong>learn more</strong>, follow these links:
+              </p>
+            </div>
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-medium is-primary" href="http://bulma.io">
+                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
+                  <strong class="has-text-weight-semibold">Documentation</strong>
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Products section -->
-    <section id='products' class="hero is-dark is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Our Products
-          </h1>
-          <p class="subtitle">
-            Must satisfy the health, beauty and home care needs of consumers.
-          </p>
-          <p class="subtitle">
-            Must be innovative, offering consumers clear, unique and relevant benefits versus
-            competing products.
-          </p>
-          <p class="subtitle">
-            Must always offer exceptional value, irrespective of the price at which they are sold.
-          </p>
-          <p class="subtitle">
-            Must be continually re-engineered and improved to be in tune with the changing
-            needs and aspirations of consumers.
-          </p>
+    <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Contact section -->
-    <section id='contact' class="hero is-light is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Contact Us
-          </h1>
-          <h2 class="subtitle">
-            <span class="icon">
-              <i class="far fa-paper-plane"></i>
-            </span>
-            <a href="mailto:contact@mercuryproducts.net">contact@mercuryproducts.net</a>
-          </h2>
-          <h2 class="subtitle">
-            <span class="icon">
-              <i class="fas fa-phone"></i>
-            </span>
-            <a href="tel:+265-994-656-786">0994 656 786</a>
-          </h2>
-          <h2 class="subtitle">
-            <span class="icon">
-              <i class="fas fa-phone"></i>
-            </span>
-            <a href="tel:+265-994-700-782">0994 700 782</a>
-          </h2>
-          <h2 class="subtitle">
-            <span class="icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </span>
-            <a href="https://goo.gl/maps/kicP7F8TVQg1Dftm8" target="_blank">AGASON TRADING CENTRE, LIMBE MALAWI</a>
-          </h2>
-        </div>
-      </div>
-    </section>
-    <footer class="footer is-danger">
-      <a class="button is-warning is-pulled-right" href="#top"><i class="fas fa-chevron-circle-up"></i></a>
-      <div class="content has-text-centered">
-        <p>
-          <a href="https://mercuryproducts.net"><img src="./images/mercury-products.png" alt="Mercury Products Logo"></a>
-        </p>
-        <p>
-          <a href="https://mercuryproducts.net"><strong>Mercury Products</strong></a> © 2020 Developed by <a href="https://josedromero.com" target="_blank">Jose Romero</a>.
-        </p>
       </div>
     </footer>
-    <!-- <script src="./node_modules/@glidejs/glide/dist/glide.js"></script> -->
-    <!-- Glide CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-    const CONFIG = {
-      type: 'carousel',
-      perView: 2,
-      autoplay: 3000,
-      animationDuration: 1500,
-      dragThreshold: false,
-      breakpoints: {
-        1024: {
-          perView: 2
-        },
-        600: {
-          perView: 1
-        }
-      }
-    }
-    new Glide('.glide', CONFIG).mount()
-    </script>
+    <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
