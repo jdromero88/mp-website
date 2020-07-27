@@ -2311,9 +2311,9 @@ a.box:active {
   .image.is-256x256 {
     height: 256px;
     width: 256px; }
-  .image.is-320x320 {
-    height: 320px;
-    width: 320px; }
+  .image.is-512x512 {
+    height: 512px;
+    width: 512px; }
 
 .notification {
   background-color: whitesmoke;
