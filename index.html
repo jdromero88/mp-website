@@ -69,7 +69,7 @@
     <nav class="navbar is-success is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item force-center" href="https://mercuryproducts.net">
+          <a class="navbar-item" href="https://mercuryproducts.net">
             <img src="./images/Mercury-Products.png" alt="Mercury Products logo">
           </a>
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -80,7 +80,7 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
           <!-- <div class="navbar-start" style="flex-grow:1; justify-content:center"> -->
-          <div class="navbar-start force-center" >
+          <div class="navbar-start" >
             <a class="navbar-item" href="#top">
               Home
             </a>
@@ -126,7 +126,7 @@
     <!-- Home section -->
     <section class="section">
       <div class="container">
-        <div class="columns is-mobile mt-1">
+        <div class="columns is-mobile is-hidden-mobile">
           <div class="column"></div>
           <div class="column is-one-fifth">
             <img src="./images/mercury-products.png" alt="Mercury Products logo">
@@ -149,6 +149,30 @@
           </div>
         </div>
         <!-- GLIDE SLIDER END -->
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="has-text-centered">
+          <button class="button is-link">Beauty</button>
+          <button class="button is-link">Candles</button>
+          <button class="button is-link">Doors & Furniture</button>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="pre-footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            First column
+          </div>
+          <div class="column has-text-centered">
+            Second column
+          </div>
+          <div class="column">
+            Third column
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer is-success">
@@ -174,7 +198,7 @@
       dragThreshold: false,
       breakpoints: {
         1024: {
-          perView: 5
+          perView: 2
         },
         600: {
           perView: 1
