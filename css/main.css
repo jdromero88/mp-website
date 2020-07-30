@@ -1,6 +1,9 @@
 .swiper-container {
-  width: 700px;
-  height: 700px; }
+  width: 50%; }
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    width: 90%; } }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
