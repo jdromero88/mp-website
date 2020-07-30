@@ -29,6 +29,11 @@ $is-success: $green;
 $is-link: $blue;
 
 $footer-background-color: $green;
+
+.swiper-container {
+    width: 700px;
+    height: 700px;
+}
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
