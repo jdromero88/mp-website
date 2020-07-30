@@ -140,7 +140,7 @@
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper ">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="./images/furniture/mercury-doors-2-panels-classic.jpeg" alt="Mercury Products - Doors - 2 panel classic"></div>
                 <div class="swiper-slide"><img src="./images/furniture/mercury-doors-2-panels.jpeg" alt="Mercury Products - Doors - 2 panel"></div>
@@ -236,6 +236,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
       var mySwiper = new Swiper('.swiper-container', {
+        autoplay: {
+          delay: 8000,
+        },
         // Optional parameters
         direction: 'horizontal',
         loop: true,
