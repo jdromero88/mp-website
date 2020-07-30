@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- new colors: green #8BC34A blue: #002C65 -->
+    <!-- color hex from logo: 002c65 -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +34,8 @@
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!-- color hex from logo: 002c65 -->
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Open Graph data -->
     <!-- Make sure to update the og:image when deploying site -->
@@ -135,7 +137,29 @@
 
     <section class="section">
       <div class="container">
-        <p class="title">Furniture goes here</p>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-2-panels-classic.jpeg" alt="Mercury Products - Doors - 2 panel classic"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-2-panels.jpeg" alt="Mercury Products - Doors - 2 panel"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-6-panels.jpeg" alt="Mercury Products - Doors - 6 panel"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-6-panels-2.jpeg" alt="Mercury Products - Doors - 6 panel"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-hardboard.jpeg" alt="Mercury Products - Doors - hardboard"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-mbawa-2-panels.jpeg" alt="Mercury Products - Doors - Mbawa - 2 panels"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-okume.jpeg" alt="Mercury Products - Doors - Okume"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-q1.jpeg" alt="Mercury Products - Doors - Q1"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-sapele.jpeg" alt="Mercury Products - Doors - Sapele"></div>
+                <div class="swiper-slide"><img src="./images/furniture/mercury-doors-walnut-q3.jpeg" alt="Mercury Products - Doors - Walnut Q3"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <section class="section" id="pre-footer">
@@ -209,5 +233,24 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      })
+    </script>
   </body>
 </html>
