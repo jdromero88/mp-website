@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- new colors: green #8BC34A blue: #002C65 -->
+    <!-- color hex from logo: 002c65 -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +34,9 @@
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!-- color hex from logo: 002c65 -->
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous"></script>
 
     <!-- Open Graph data -->
     <!-- Make sure to update the og:image when deploying site -->
@@ -139,13 +142,16 @@
           <div class="column is-quarter">
             <div class="card">
               <div class="card-image">
-                <figure class="image">
-                  <img src="./images/beauty/Aroma-pure-glycerine-2.jpg" alt="Aroma pure glycerine">
-                </figure>
+                <a href="./images/beauty/Aroma-pure-glycerine-2.jpg" data-lightbox="roadtrip">
+                  <figure class="image">
+                    <img src="./images/beauty/Aroma-pure-glycerine-2.jpg" alt="Aroma pure glycerine">
+                  </figure>
+                </a>
               </div>
               <div class="card-content">
                 <div class="content">
-                  Aroma Pure Glycerine 50ml. <a>@mercuryproducts</a>.
+                  <a href="./images/beauty/Aroma-pure-glycerine.jpg" data-lightbox="roadtrip">Aroma Pure Glycerine 50ml.</a>
+                  <a>@mercuryproducts</a>.
                   <a href="https://api.whatsapp.com/send?phone=+265999656786&text=I want to order Aroma Pure Glycerine 50ml.: ">Order via Whatsapp</a> | <a href="tel:01 841 356">Call to order.</a>
                 </div>
               </div>
