@@ -14,6 +14,7 @@
 $green: #8bc34a;
 // Update the blue shade, used for links
 $blue: #002C65;
+$gray: #848484;
 // Add pink and its invert
 $pink: #ff8080;
 $pink-invert: #fff;
@@ -31,8 +32,28 @@ $is-link: $blue;
 $footer-background-color: $green;
 
 .swiper-container {
-    width: 50%;
+  width: 50%;
 }
+
+.new-background {
+  // gradient white with gray
+  // background: linear-gradient(#fff, $gray);
+  // gradient white with blue
+  // background: linear-gradient(#fff, $blue);
+  // gradient blue with white
+  // background: linear-gradient($blue, #fff);
+  background: linear-gradient($blue, #fff 75%);
+
+  // gradient blue, gray with green ish at the bottom
+  // background: linear-gradient($blue, #fff 70%, $green);
+
+  // gradient blue with gray
+  // background: linear-gradient($blue, $gray);
+
+  // gradient blue with purpleish
+  // background: linear-gradient($blue, #9198e5);
+}
+
 @media screen and (max-width: 768px) {
   .swiper-container {
     width: 90%; } }

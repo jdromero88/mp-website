@@ -1,6 +1,9 @@
 .swiper-container {
   width: 50%; }
 
+.new-background {
+  background: linear-gradient(#002C65, #fff 75%); }
+
 @media screen and (max-width: 768px) {
   .swiper-container {
     width: 90%; } }
